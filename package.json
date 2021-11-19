@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "watch-tw": "npx tailwind -o \"public/styles/dist.css\" -m -w"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
