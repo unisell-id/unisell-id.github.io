@@ -1,3 +1,5 @@
 {
-  "liveServer.settings.root": "/public"
+  "liveServer.settings.ignoreFiles": [
+    "node_modules/**/*"
+  ]
 }
