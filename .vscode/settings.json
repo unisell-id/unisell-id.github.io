@@ -1,5 +1,12 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "liveServer.settings.ignoreFiles": [
     "node_modules/**/*"
   ],
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.validate": true,
+  "volar.completion.autoImportComponent": true,
+  "volar.completion.preferredTagNameCase": "pascal",
 }
