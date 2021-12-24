@@ -18,10 +18,7 @@
         :key="el.label"
         class="item"
       >
-        <router-link
-          class="btn"
-          v-bind="el"
-        >
+        <router-link class="btn" v-bind="el">
           {{ label }}
         </router-link>
       </li>
@@ -29,10 +26,7 @@
 
     <ul class="section lg-up">
       <li class="item">
-        <a
-          :href="ContactPerson.whatsappLink"
-          class="btn"
-        >
+        <a :href="ContactPerson.whatsappLink" class="btn">
           <PhoneIcon class="w-4 h-4" />
           <span>Hubungi Kami</span>
         </a>
@@ -41,10 +35,7 @@
 
     <ul class="section lg-down">
       <li class="item">
-        <a
-          :href="ContactPerson.whatsappLink"
-          class="btn"
-        >
+        <a :href="ContactPerson.whatsappLink" class="btn">
           <PhoneIcon class="w-5 h-5" />
         </a>
       </li>
@@ -59,27 +50,27 @@
 </template>
 
 <script setup>
-import { PhoneIcon, MenuIcon } from '@heroicons/vue/solid'
-import BrandTypography from '../components/BrandTypography.vue';
-import BrandLogoOnly from '../components/BrandLogoOnly.vue';
-import { ContactPerson } from '../utils/contactPerson'
+import { PhoneIcon, MenuIcon } from "@heroicons/vue/solid";
+import BrandTypography from "../components/BrandTypography.vue";
+import BrandLogoOnly from "../components/BrandLogoOnly.vue";
+import { ContactPerson } from "../utils/contactPerson";
 
 const CenterNavItems = [
   {
-    label: 'Beranda',
-    to: '#!',
+    label: "Beranda",
+    to: "#!",
   },
   {
-    label: 'Tentang',
-    to: '#!',
+    label: "Tentang",
+    to: "#!",
   },
   {
-    label: 'Cara kerja',
-    to: '#!',
+    label: "Cara kerja",
+    to: "#!",
   },
   {
-    label: 'FAQ',
-    to: '#!',
+    label: "FAQ",
+    to: "#!",
   },
 ];
 </script>

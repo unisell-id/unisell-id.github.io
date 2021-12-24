@@ -2,7 +2,9 @@
   <Navbar />
 
   <!--header-->
-  <header class="relative h-[75vh] bg-[url('/img/header-img.jpg')] bg-fixed bg-cover bg-no-repeat bg-left-bottom">
+  <header
+    class="relative h-[75vh] bg-[url('/img/header-img.jpg')] bg-fixed bg-cover bg-no-repeat bg-left-bottom"
+  >
     <div class="absolute inset-0 overlay" />
 
     <div
@@ -15,7 +17,10 @@
 
       <p
         class="max-w-prose font-semibold text-lg lg:text-center text-stone-100"
-      >Kami menyediakan platform untuk membantu anda dalam menemukan barang jual serta membantu para produsen memasarkan produk anda.</p>
+      >
+        Kami menyediakan platform untuk membantu anda dalam menemukan barang
+        jual serta membantu para produsen memasarkan produk anda.
+      </p>
 
       <div class="py-4">
         <router-link
@@ -39,11 +44,11 @@
           <p>
             <b>
               - Mau bisnis tapi jualan apa ya?
-              <br />- Aku udah punya ide jualan, tapi nggak punya modal.
-              <br />- Kalau jualan aku nggak punya tempat buat menaruh daganganku.
-              <br />- Eh cara jualan yang benar bagaimana ya?
-              <br />- Susah menjalani bisnis sendiri, seandainya aku punya
-              <br />tempat buat sharing-sharing kegiatan bisnis pasti seru.
+              <br />- Aku udah punya ide jualan, tapi nggak punya modal. <br />-
+              Kalau jualan aku nggak punya tempat buat menaruh daganganku.
+              <br />- Eh cara jualan yang benar bagaimana ya? <br />- Susah
+              menjalani bisnis sendiri, seandainya aku punya <br />tempat buat
+              sharing-sharing kegiatan bisnis pasti seru.
             </b>
           </p>
         </h1>
@@ -62,10 +67,11 @@
           <p>
             <b>
               - Susah juga ya bikin produk sama jualan.
-              <br />- Wah aku suka bikin kerajinan, tapi aku gak bisa jualan (*merasa tidak menghasilkan).
-              <br />- Bisa tidak ya usahaku cuma fokus produksi aja?
-              <br />- Mau meningkatkan produksi tapi kalau tidak terjual
-              <br />bagaimana ya? Niat cari untung lebih malah buntung.
+              <br />- Wah aku suka bikin kerajinan, tapi aku gak bisa jualan
+              (*merasa tidak menghasilkan). <br />- Bisa tidak ya usahaku cuma
+              fokus produksi aja? <br />- Mau meningkatkan produksi tapi kalau
+              tidak terjual <br />bagaimana ya? Niat cari untung lebih malah
+              buntung.
             </b>
           </p>
         </h3>
@@ -75,8 +81,9 @@
 
   <section class="bg-orange-100">
     <div class="py-14 px-10 md:flex justify-center">
-      <BrandLogoOnly />
+      <img src="Unisell-Brand_Logo-Only.svg" />
     </div>
+
     <div class="py-4 px-10 col-span-2">
       <h1 class="text-lg mx-20">
         <b>Sekilas</b>
@@ -85,9 +92,9 @@
       <h1 class="mx-20">
         Untuk anda yang ingin memulai bisnis maupun yang
         <br />ingin mengembangkan bisnisnya (reseller dan supplier),
-        <br />Marketplace B2B yang menyediakan cara kerja yang
-        <br />simpel dan mudah sehingga meminimalisir usaha anda
-        <br />dalam menjalankan bisnis serta memasarkan produk anda.
+        <br />Marketplace B2B yang menyediakan cara kerja yang <br />simpel dan
+        mudah sehingga meminimalisir usaha anda <br />dalam menjalankan bisnis
+        serta memasarkan produk anda.
         <br />
         <h1 class="text-right">
           <b>Apa yang bukan kita?</b>
@@ -100,9 +107,12 @@
         </h1>
       </h1>
       <div class="py-4 flex justify-end">
-        <button>
-          <b>Pelajari Kita Lebih Lengkap</b>
-        </button>
+        <router-link
+          to="#!"
+          class="flex px-4 py-2 bg-amber-500 hover:bg-orange-500 text-white-800 justify-center"
+        >
+          <span class="font-medium">Pelajari Kita Lebih Lengkap</span>
+        </router-link>
       </div>
     </div>
   </section>
@@ -112,15 +122,61 @@
       <b class="text-lg">Bagaimana Cara Kita Bekerja</b>
     </h1>
 
-    <h1 class="mx-20 text-amber-300 text-lg">
+    <h1 class="mx-20 py-6 text-amber-300 text-lg">
       <b>Flow Here...</b>
     </h1>
   </section>
+
+  <section class="bg-orange-100 col-2">
+    <div class="py-12 px-12 md:flex justify-between">
+      <ul class="py-48 px-72">
+        <img src="img/FAQ.png" />
+      </ul>
+      <Accordion>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod<br />
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br />
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea<br />
+        commodo consequat.
+      </Accordion>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="bg-stone-900">
+    <div class="p-4 bg-stone-900 text-white">
+      <div class="max-w-7xl mx-auto flex justify-items-start">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:gird-cols-4 gap-2">
+          <div class="mb-5 w-48 mx-16">
+            <img src="Unisell-Brand_Typo.svg " />
+            &copy; 2021 Unisell Indonesia <br />All right reserved.
+          </div>
+          <div class="mb-5 py-16 px-10 columns-2">
+            <h1 class="text-gray-300 pb-2">Navigasi</h1>
+            <ul class="py-4">
+              <li class="pb-4">Beranda</li>
+              <li class="pb-4">Tentang</li>
+              <li class="pb-4">Katalog</li>
+            </ul>
+            <div class="px-4">
+              <h1 class="text-gray-300 pb-10">Media Sosial</h1>
+              <ul class="py-4">
+                <li class="pb-4">Unisell Indonesia</li>
+                <li class="pb-4">Unisell.id</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script setup>
-import Navbar from '../components/Navbar.vue';
-import BrandLogoOnly from '../components/BrandLogoOnly.vue';
+import Navbar from "../components/Navbar.vue";
+import BrandLogoOnly from "../components/BrandLogoOnly.vue";
+import Accordion from "../components/Accordion.vue";
 </script>
 
 <style lang="sass" scoped>
