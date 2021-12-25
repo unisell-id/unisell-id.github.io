@@ -5,7 +5,7 @@
   <header
     class="relative h-[75vh] bg-[url('/img/header-img.jpg')] bg-fixed bg-cover bg-no-repeat bg-left-bottom"
   >
-    <div class="absolute inset-0 overlay" />
+    <div class="absolute inset-0 overlay" title="image by unsplash" />
 
     <div
       class="absolute inset-0 flex flex-col p-8 justify-center items-start lg:items-center gap-y-4"
@@ -81,7 +81,7 @@
 
   <section class="bg-orange-100">
     <div class="py-14 px-10 md:flex justify-center">
-      <img src="Unisell-Brand_Logo-Only.svg" />
+      <BrandLogoOnly />
     </div>
 
     <div class="py-4 px-10 col-span-2">
@@ -130,7 +130,7 @@
   <section class="bg-orange-100 col-2">
     <div class="py-12 px-12 md:flex justify-between">
       <ul class="py-48 px-72">
-        <img src="img/FAQ.png" />
+        <img src="/img/FAQ.png" />
       </ul>
       <Accordion>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -149,7 +149,7 @@
       <div class="max-w-7xl mx-auto flex justify-items-start">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:gird-cols-4 gap-2">
           <div class="mb-5 w-48 mx-16">
-            <img src="Unisell-Brand_Typo.svg " />
+            <BrandTypography />
             &copy; 2021 Unisell Indonesia <br />All right reserved.
           </div>
           <div class="mb-5 py-16 px-10 columns-2">
@@ -176,6 +176,7 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import BrandLogoOnly from "../components/BrandLogoOnly.vue";
+import BrandTypography from '../components/BrandTypography.vue';
 import Accordion from "../components/Accordion.vue";
 </script>
 

@@ -89,10 +89,10 @@ nav
       @apply lg:hidden
 
   .item
-    @apply flex px-4 py-2 justify-center items-center
-    :hover
+    @apply flex justify-center items-stretch
+    &:hover
       @apply bg-gray-100
 
   .btn
-    @apply flex items-center font-semibold text-stone-700 gap-x-2
+    @apply flex px-4 py-2 font-semibold text-stone-700 items-center gap-x-2
 </style>
