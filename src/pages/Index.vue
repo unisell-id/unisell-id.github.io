@@ -81,37 +81,46 @@
 
   <section class="bg-orange-100">
     <div class="py-14 px-10 md:flex justify-center">
-      <img src="Unisell-Brand_Logo-Only.svg" />
+      <img src="img/BrandLogo.png" />
     </div>
 
-    <div class="py-4 px-10 col-span-2">
-      <h1 class="text-lg mx-20">
+    <div class="py-4 px-10">
+      <h1 class="text-lg">
         <b>Sekilas</b>
       </h1>
       <br />
-      <h1 class="mx-20">
-        Untuk anda yang ingin memulai bisnis maupun yang
-        <br />ingin mengembangkan bisnisnya (reseller dan supplier),
-        <br />Marketplace B2B yang menyediakan cara kerja yang <br />simpel dan
-        mudah sehingga meminimalisir usaha anda <br />dalam menjalankan bisnis
-        serta memasarkan produk anda.
-        <br />
-        <h1 class="text-right">
-          <b>Apa yang bukan kita?</b>
-        </h1>
-        <br />
-        <h1 class="flex justify-end">
-          Kami bukan marketplace untuk berbelanja layaknya e-commerce
-          <br />pada umumnya. Sistem kita hanya menerima reseller dan supplier.
+      <div class="flex justify-between">
+        <p class="text-stone-500">
+          Untuk anda yang ingin memulai bisnis maupun yang <br />ingin
+          mengembangkan bisnisnya (reseller dan supplier), <br />Marketplace B2B
+          yang menyediakan cara kerja yang <br />simpel dan mudah sehingga
+          meminimalisir usaha anda <br />dalam menjalankan bisnis serta
+          memasarkan produk anda.
+        </p>
+
+        <div>
+          <p class="text-lg">
+            <b>Apa yang bukan kita?</b>
+          </p>
           <br />
-        </h1>
-      </h1>
+
+          <div>
+            <p class="text-stone-500">
+              Kami bukan marketplace untuk berbelanja layaknya e-commerce
+              <br />pada umumnya. Sistem kita hanya menerima reseller dan
+              supplier.
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="py-4 flex justify-end">
         <router-link
           to="#!"
           class="flex px-4 py-2 bg-amber-500 hover:bg-orange-500 text-white-800 justify-center"
         >
           <span class="font-medium">Pelajari Kita Lebih Lengkap</span>
+          <ArrowRight class="w-6" />
         </router-link>
       </div>
     </div>
@@ -133,12 +142,16 @@
         <img src="img/FAQ.png" />
       </ul>
       <Accordion>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod<br />
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br />
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-        ea<br />
-        commodo consequat.
+        <br />
+        <p class="text-stone-500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod<br />
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim<br />
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea<br />
+          commodo consequat.
+        </p>
       </Accordion>
     </div>
   </section>
@@ -148,9 +161,11 @@
     <div class="p-4 bg-stone-900 text-white">
       <div class="max-w-7xl mx-auto flex justify-items-start">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:gird-cols-4 gap-2">
-          <div class="mb-5 w-48 mx-16">
+          <div class="w-36 mx-16">
             <img src="Unisell-Brand_Typo.svg " />
-            &copy; 2021 Unisell Indonesia <br />All right reserved.
+            &copy; 2021 Unisell Indonesia <br />
+            <br />
+            All right reserved.
           </div>
           <div class="mb-5 py-16 px-10 columns-2">
             <h1 class="text-gray-300 pb-2">Navigasi</h1>
@@ -177,6 +192,7 @@
 import Navbar from "../components/Navbar.vue";
 import BrandLogoOnly from "../components/BrandLogoOnly.vue";
 import Accordion from "../components/Accordion.vue";
+import ArrowRight from "../components/icons/ArrowRight.vue";
 </script>
 
 <style lang="sass" scoped>
