@@ -81,15 +81,11 @@
 
   <section class="bg-orange-100">
     <div class="py-14 px-10 md:flex justify-center">
-
-
-      <BrandLogoOnly />
-
+      <img src="/img/BrandLogo.png " />
     </div>
-
     <div class="py-4 px-10">
       <h1 class="text-lg">
-        <b>Sekilas</b>
+        <b class="text-stone-700">Sekilas</b>
       </h1>
       <br />
       <div class="flex justify-between">
@@ -103,7 +99,7 @@
 
         <div>
           <p class="text-lg">
-            <b>Apa yang bukan kita?</b>
+            <b class="text-stone-500">Apa yang bukan kita?</b>
           </p>
           <br />
 
@@ -169,24 +165,6 @@
             &copy; 2021 Unisell Indonesia <br />
             <br />
             All right reserved.
-          <div class="mb-5 w-48 mx-16">
-            <BrandTypography />
-            &copy; 2021 Unisell Indonesia <br />All right reserved.
-          </div>
-          <div class="mb-5 py-16 px-10 columns-2">
-            <h1 class="text-gray-300 pb-2">Navigasi</h1>
-            <ul class="py-4">
-              <li class="pb-4">Beranda</li>
-              <li class="pb-4">Tentang</li>
-              <li class="pb-4">Katalog</li>
-            </ul>
-            <div class="px-4">
-              <h1 class="text-gray-300 pb-10">Media Sosial</h1>
-              <ul class="py-4">
-                <li class="pb-4">Unisell Indonesia</li>
-                <li class="pb-4">Unisell.id</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -197,9 +175,10 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import BrandLogoOnly from "../components/BrandLogoOnly.vue";
-import BrandTypography from '../components/BrandTypography.vue';
+import BrandTypography from "../components/BrandTypography.vue";
 import Accordion from "../components/Accordion.vue";
 import ArrowRight from "../components/icons/ArrowRight.vue";
+import BrandLogoOnly1 from "../components/BrandLogoOnly.vue";
 </script>
 
 <style lang="sass" scoped>
