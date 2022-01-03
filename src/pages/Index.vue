@@ -5,7 +5,7 @@
   <header
     class="relative h-[75vh] bg-[url('/img/header-img.jpg')] bg-fixed bg-cover bg-no-repeat bg-left-bottom"
   >
-    <div class="absolute inset-0 overlay" />
+    <div class="absolute inset-0 overlay" title="image by unsplash" />
 
     <div
       class="absolute inset-0 flex flex-col p-8 justify-center items-start lg:items-center gap-y-4"
@@ -81,7 +81,10 @@
 
   <section class="bg-orange-100">
     <div class="py-14 px-10 md:flex justify-center">
-      <img src="img/BrandLogo.png" />
+
+
+      <BrandLogoOnly />
+
     </div>
 
     <div class="py-4 px-10">
@@ -139,7 +142,7 @@
   <section class="bg-orange-100 col-2">
     <div class="py-12 px-12 md:flex justify-between">
       <ul class="py-48 px-72">
-        <img src="img/FAQ.png" />
+        <img src="/img/FAQ.png" />
       </ul>
       <Accordion>
         <br />
@@ -166,6 +169,9 @@
             &copy; 2021 Unisell Indonesia <br />
             <br />
             All right reserved.
+          <div class="mb-5 w-48 mx-16">
+            <BrandTypography />
+            &copy; 2021 Unisell Indonesia <br />All right reserved.
           </div>
           <div class="mb-5 py-16 px-10 columns-2">
             <h1 class="text-gray-300 pb-2">Navigasi</h1>
@@ -191,6 +197,7 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import BrandLogoOnly from "../components/BrandLogoOnly.vue";
+import BrandTypography from '../components/BrandTypography.vue';
 import Accordion from "../components/Accordion.vue";
 import ArrowRight from "../components/icons/ArrowRight.vue";
 </script>

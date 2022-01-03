@@ -5,6 +5,7 @@
   "liveServer.settings.ignoreFiles": [
     "node_modules/**/*"
   ],
+  "liveServer.settings.root": "/dist",
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.validate": true,
   "volar.completion.autoImportComponent": true,
