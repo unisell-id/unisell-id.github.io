@@ -36,7 +36,9 @@
   <section class="bg-orange-100">
     <div class="py-14 px-10 text-left">
       <h1 class="text-lg mx-20">
-        <b>Apakah hal-hal seperti ini menjadi keresahan anda?</b>
+        <b class="text-stone-700"
+          >Apakah hal-hal seperti ini menjadi keresahan anda?</b
+        >
       </h1>
       <br />
       <div class="text-orange-500 columns-2 text-left flex justify-end">
@@ -59,7 +61,7 @@
   <section class="bg-amber-500">
     <div class="py-14 px-10 text-right">
       <h1 class="text-lg mx-20">
-        <b>Atau.. mungkin keresahan anda seperti ini?</b>
+        <b class="text-stone-700">Atau.. mungkin keresahan anda seperti ini?</b>
       </h1>
       <br />
       <div class="text-white columns-2 text-left flex justify-start">
@@ -99,7 +101,7 @@
 
         <div>
           <p class="text-lg">
-            <b class="text-stone-500">Apa yang bukan kita?</b>
+            <b class="text-stone-700">Apa yang bukan kita?</b>
           </p>
           <br />
 
@@ -156,17 +158,32 @@
   </section>
 
   <!--footer-->
-  <footer class="bg-stone-900">
-    <div class="p-4 bg-stone-900 text-white">
-      <div class="max-w-7xl mx-auto flex justify-items-start">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:gird-cols-4 gap-2">
-          <div class="w-36 mx-16">
-            <img src="Unisell-Brand_Typo.svg " />
-            &copy; 2021 Unisell Indonesia <br />
-            <br />
-            All right reserved.
-          </div>
-        </div>
+  <footer class="bg-stone-900 px-24 py-12 flex flex-col">
+    <div class="flex flex-row space-x-32 justify-between">
+      <div>
+        <img src="Unisell-Brand_Typo.svg" alt="logo" class="w-1/3" />
+        <p class="text-stone-300">
+          &copy; 2021 Unisell Indonesia <br />
+          All right reserved.
+        </p>
+      </div>
+      <div class="flex flex-col space-y-2 text-white">
+        <h2 class="text-xs text-stone-300">Navigasi</h2>
+        <a href="#" class="block w-full hover:underline">Beranda</a>
+        <a href="#" class="bock w-full hover:underline">Tentang</a>
+        <a href="#" class="block w-full hover:underline">Catalog</a>
+      </div>
+      <div class="flex flex-col space-y-2 text-white">
+        <h2 class="text-xs text-stone-300">Media Sosial</h2>
+        <p>Unisell Indonesia</p>
+        <p>unisell.id</p>
+      </div>
+      <div class="flex flex-col space-y-2 text-white">
+        <h2 class="text-xs text-stone-300">Alamat</h2>
+        <p>
+          Jalan Kolonel Sutarto Nomor 150K, Jebres, Surakarta City, Central Java
+          57126
+        </p>
       </div>
     </div>
   </footer>
