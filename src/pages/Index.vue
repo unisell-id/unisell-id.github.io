@@ -169,20 +169,23 @@
       </div>
       <div class="flex flex-col space-y-2 text-white">
         <h2 class="text-xs text-stone-300">Navigasi</h2>
-        <a href="#" class="block w-full hover:underline">Beranda</a>
-        <a href="#" class="bock w-full hover:underline">Tentang</a>
-        <a href="#" class="block w-full hover:underline">Catalog</a>
+        <a href="#" class="block w-full hover:underline">Beranda</a><br />
+        <a href="#" class="bock w-full hover:underline">Tentang</a><br />
+        <a href="#" class="block w-full hover:underline">Katalog</a><br />
       </div>
       <div class="flex flex-col space-y-2 text-white">
         <h2 class="text-xs text-stone-300">Media Sosial</h2>
-        <p>Unisell Indonesia</p>
-        <p>unisell.id</p>
+
+        <div class="flex justify-start">
+          <Instagram class="w-6" />
+          <p class="px-2">unisell.id</p>
+        </div>
       </div>
+
       <div class="flex flex-col space-y-2 text-white">
         <h2 class="text-xs text-stone-300">Alamat</h2>
         <p>
-          Jalan Kolonel Sutarto Nomor 150K, Jebres, Surakarta City, Central Java
-          57126
+          Jalan Kolonel Sutarto Nomor 150K, Jebres, Surakarta, Jawa Tengah 57126
         </p>
       </div>
     </div>
@@ -196,6 +199,7 @@ import BrandTypography from "../components/BrandTypography.vue";
 import Accordion from "../components/Accordion.vue";
 import ArrowRight from "../components/icons/ArrowRight.vue";
 import BrandLogoOnly1 from "../components/BrandLogoOnly.vue";
+import Instagram from "../components/icons/Instagram.vue";
 </script>
 
 <style lang="sass" scoped>
