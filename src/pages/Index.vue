@@ -33,31 +33,23 @@
     </div>
   </header>
 
-  <section class="bg-orange-100">
-    <div class="py-14 px-10 text-left">
-      <h1 class="text-lg mx-20">
-        <b class="text-stone-700"
-          >Apakah hal-hal seperti ini menjadi keresahan anda?</b
-        >
-      </h1>
-      <br />
-      <div class="text-orange-500 columns-2 text-left flex justify-end">
-        <h1 class="text-base">
-          <p>
-            <b>
-              - Mau bisnis tapi jualan apa ya?
-              <br />- Aku udah punya ide jualan, tapi nggak punya modal. <br />-
-              Kalau jualan aku nggak punya tempat buat menaruh daganganku.
-              <br />- Eh cara jualan yang benar bagaimana ya? <br />- Susah
-              menjalani bisnis sendiri, seandainya aku punya <br />tempat buat
-              sharing-sharing kegiatan bisnis pasti seru.
-            </b>
-          </p>
-        </h1>
-      </div>
+  <section class="bg-orange-100 py-32 px-16">
+    <div class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10">
+      <h4 class="font-semibold text-2xl text-stone-700">
+        Apakah hal-hal seperti ini menjadi keresahan anda?
+      </h4>
+
+      <ul class="list-disc text-lg font-semibold text-orange-500 space-y-3">
+        <li>Mau bisnis tapi jualan apa ya? 🤔</li>
+        <li>Aku udah punya ide jualan, tapi nggak punya modal 🙁</li>
+        <li>Kalau jualan aku nggak punya tempat buat menaruh daganganku 😫</li>
+        <li>Eh cara jualan yang benar bagaimana ya? 😅</li>
+        <li>Menjalani bisnis sendiri, seandainya aku punya tempat buat sharing-sharing kegiatan bisnis pasti seru 😁</li>
+      </ul>
     </div>
   </section>
 
+  <!-- samakan diatas -->
   <section class="bg-amber-500">
     <div class="py-14 px-10 text-right">
       <h1 class="text-lg mx-20">
@@ -81,15 +73,19 @@
     </div>
   </section>
 
+  <!-- layout kurang rapi, prefer flex. html kurang semantic -->
   <section class="bg-orange-100">
+    <!-- wrapper flex buat max-width -->
     <div class="py-14 px-10 md:flex justify-center">
       <img src="/img/BrandLogo.png " />
     </div>
+
     <div class="py-4 px-10">
       <h1 class="text-lg">
         <b class="text-stone-700">Sekilas</b>
       </h1>
       <br />
+      <!-- font weight blum sesuai -->
       <div class="flex justify-between">
         <p class="text-stone-500">
           Untuk anda yang ingin memulai bisnis maupun yang <br />ingin
@@ -137,13 +133,18 @@
     </h1>
   </section>
 
-  <section class="bg-orange-100 col-2">
-    <div class="py-12 px-12 md:flex justify-between">
-      <ul class="py-48 px-72">
-        <img src="/img/FAQ.png" />
-      </ul>
-      <Accordion>
+  <section class="bg-orange-100 p-8 lg:py-32 lg:px-16">
+    <div class="flex flex-col lg:flex-row items-center gap-x-8 gap-y-4">
+      <div class="flex flex-col w-full p-4 justify-center items-center">
+        <h4 class="font-bold font-signika text-4xl text-center">
+          <span class="text-gradient">FAQ</span>
+        </h4>
+      </div>
+
+      <!-- blum ada spacing, rounded border -->
+      <Accordion class="w-full">
         <br />
+        <!-- what the heck? -->
         <p class="text-stone-500">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod<br />
@@ -157,7 +158,7 @@
     </div>
   </section>
 
-  <!--footer-->
+  <!--  -->
   <footer class="bg-stone-900 px-24 py-12 flex flex-col">
     <div class="flex flex-row space-x-32 justify-between">
       <div>
@@ -183,10 +184,10 @@
       </div>
 
       <div class="flex flex-col space-y-2 text-white">
-        <h2 class="text-xs text-stone-300">Alamat</h2>
-        <p>
+        <span class="text-xs text-stone-300">Alamat</span>
+        <address>
           Jalan Kolonel Sutarto Nomor 150K, Jebres, Surakarta, Jawa Tengah 57126
-        </p>
+        </address>
       </div>
     </div>
   </footer>
@@ -194,15 +195,16 @@
 
 <script setup>
 import Navbar from "../components/Navbar.vue";
-import BrandLogoOnly from "../components/BrandLogoOnly.vue";
-import BrandTypography from "../components/BrandTypography.vue";
 import Accordion from "../components/Accordion.vue";
 import ArrowRight from "../components/icons/ArrowRight.vue";
-import BrandLogoOnly1 from "../components/BrandLogoOnly.vue";
 import Instagram from "../components/icons/Instagram.vue";
 </script>
 
 <style lang="sass" scoped>
 .overlay
-  background: linear-gradient(180deg, rgba(28, 25, 23, 0.4) 0%, rgba(28, 25, 23, 0.35) 33.12%, rgba(28, 25, 23, 0.7) 69.58%), url(.jpg)
+  background-image: linear-gradient(180deg, rgba(28, 25, 23, 0.4) 0%, rgba(28, 25, 23, 0.35) 33.12%, rgba(28, 25, 23, 0.7) 69.58%), url(.jpg)
+
+.text-gradient
+  @apply bg-clip-text text-transparent
+  background-image: linear-gradient(168.45deg, #ED2024 11.75%, #F99D1C 89.09%)
 </style>

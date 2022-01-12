@@ -62,7 +62,7 @@ const CenterNavItems = [
   },
   {
     label: "Tentang",
-    to: "#!",
+    to: "/tentang",
   },
   {
     label: "Cara kerja",
