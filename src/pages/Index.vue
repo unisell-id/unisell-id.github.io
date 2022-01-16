@@ -34,7 +34,9 @@
   </header>
 
   <section class="bg-orange-100 py-32 px-16">
-    <div class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10">
+    <div
+      class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10"
+    >
       <h4 class="font-semibold text-2xl text-stone-700">
         Apakah hal-hal seperti ini menjadi keresahan anda?
       </h4>
@@ -44,46 +46,49 @@
         <li>Aku udah punya ide jualan, tapi nggak punya modal 🙁</li>
         <li>Kalau jualan aku nggak punya tempat buat menaruh daganganku 😫</li>
         <li>Eh cara jualan yang benar bagaimana ya? 😅</li>
-        <li>Menjalani bisnis sendiri, seandainya aku punya tempat buat sharing-sharing kegiatan bisnis pasti seru 😁</li>
+        <li>
+          Menjalani bisnis sendiri, seandainya aku punya tempat buat
+          sharing-sharing kegiatan bisnis pasti seru 😁
+        </li>
       </ul>
     </div>
   </section>
 
   <!-- samakan diatas -->
-  <section class="bg-amber-500">
-    <div class="py-14 px-10 text-right">
-      <h1 class="text-lg mx-20">
-        <b class="text-stone-700">Atau.. mungkin keresahan anda seperti ini?</b>
-      </h1>
-      <br />
-      <div class="text-white columns-2 text-left flex justify-start">
-        <h3>
-          <p>
-            <b>
-              - Susah juga ya bikin produk sama jualan.
-              <br />- Wah aku suka bikin kerajinan, tapi aku gak bisa jualan
-              (*merasa tidak menghasilkan). <br />- Bisa tidak ya usahaku cuma
-              fokus produksi aja? <br />- Mau meningkatkan produksi tapi kalau
-              tidak terjual <br />bagaimana ya? Niat cari untung lebih malah
-              buntung.
-            </b>
-          </p>
-        </h3>
-      </div>
+  <section class="bg-amber-500 py-32 px-16">
+    <div
+      class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10"
+    >
+      <ul class="list-disc text-lg font-semibold text-white space-y-3">
+        <li>Susah juga ya bikin produk sama jualan. &#128556</li>
+        <li>
+          Wah aku suka bikin kerajinan, tapi aku gak bisa <br />jualan 😅
+          (*merasa tidak menghasilkan).
+        </li>
+        <li>Bisa tidak ya usahaku cuma fokus produksi aja?</li>
+        <li>
+          Mau meningkatkan produksi tapi kalau tidak terjual bagaimana ya? Niat
+          cari untung lebih malah buntung.  &#128578
+        </li>
+      </ul>
+
+      <h4 class="font-semibold text-2xl text-stone-700">
+        Atau.. mungkin keresahan anda seperti ini?
+      </h4>
     </div>
   </section>
 
   <!-- layout kurang rapi, prefer flex. html kurang semantic -->
-  <section class="bg-orange-100">
+  <section class="bg-orange-100 ">
     <!-- wrapper flex buat max-width -->
     <div class="py-14 px-10 md:flex justify-center">
       <img src="/img/BrandLogo.png " />
     </div>
 
     <div class="py-4 px-10">
-      <h1 class="text-lg">
+      <h4 class="text-lg">
         <b class="text-stone-700">Sekilas</b>
-      </h1>
+      </h4>
       <br />
       <!-- font weight blum sesuai -->
       <div class="flex justify-between">
@@ -114,7 +119,7 @@
       <div class="py-4 flex justify-end">
         <router-link
           to="#!"
-          class="flex px-4 py-2 bg-amber-500 hover:bg-orange-500 text-white-800 justify-center"
+          class="flex px-4 py-2 bg-amber-500 hover:bg-orange-500 text-white justify-center"
         >
           <span class="font-medium">Pelajari Kita Lebih Lengkap</span>
           <ArrowRight class="w-6" />
@@ -142,18 +147,19 @@
       </div>
 
       <!-- blum ada spacing, rounded border -->
-      <Accordion class="w-full">
-        <br />
-        <!-- what the heck? -->
-        <p class="text-stone-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod<br />
+      <Accordion class="w-full rounded">
+
+
+        <ul class="list-disc space-y-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim<br />
+          minim
           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea<br />
+          ea
           commodo consequat.
-        </p>
+        </ul>
+
+
       </Accordion>
     </div>
   </section>
@@ -164,7 +170,7 @@
       <div>
         <img src="Unisell-Brand_Typo.svg" alt="logo" class="w-1/3" />
         <p class="text-stone-300">
-          &copy; 2021 Unisell Indonesia <br />
+          &copy; 2022 Unisell Indonesia <br />
           All right reserved.
         </p>
       </div>
