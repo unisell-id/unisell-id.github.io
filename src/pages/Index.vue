@@ -77,16 +77,16 @@
   </section>
 
 
-  <section class="bg-orange-100 py-16  ">
+  <section class="bg-orange-100 p-4  lg:py-32 lg:px-16  ">
     <!-- wrapper flex buat max-width -->
-      <div class=" md:flex justify-center">
+      <div class=" flex flex-col sm:flex-row w-full p-4 justify-center gap-x-4 gap-y-1 ">
         <img src="/img/BrandLogo.png " />
        </div>
 
-    <div class="flex flex-col lg:flex-row w-full max-w-6xl mx-auto gap-x-8 gap-y-4 ">
+    <div class="flex flex-col lg:flex-row w-full max-w-6xl mx-auto gap-x-4 gap-y-1 items-center ">
 
 
-      <div class=" py-10 max-w-2xl">
+      <div class=" py-10 w-3/4">
         <h4 class="text-xl  text-stone-700">
         <b>Sekilas</b>
         </h4>
@@ -177,8 +177,8 @@
   </section>
 
   <!--  -->
-  <footer class="bg-stone-900 px-24 py-12 flex flex-col max-w-full mx-auto gap-x-8 gap-y-4 ">
-    <div class="flex flex-row space-x-32 justify-between ">
+  <footer class="bg-stone-900 p-8 lg:py-12 lg:px-10 ">
+    <div class="flex flex-row space-x-32 justify-between max-w-full  ">
       <div>
         <img src="Unisell-Brand_Typo.svg" alt="logo" class="w-1/2" />
         <p class="text-stone-300">
