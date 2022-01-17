@@ -35,8 +35,7 @@
 
   <section class="bg-orange-100 py-32 px-16">
     <div
-      class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10"
-    >
+      class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10" >
       <h4 class="font-semibold text-2xl text-stone-700">
         Apakah hal-hal seperti ini menjadi keresahan anda?
       </h4>
@@ -57,8 +56,7 @@
   <!-- samakan diatas -->
   <section class="bg-amber-500 py-32 px-16">
     <div
-      class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10"
-    >
+      class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10">
       <ul class="list-disc text-lg font-semibold text-white space-y-3">
         <li>Susah juga ya bikin produk sama jualan. &#128556</li>
         <li>
@@ -78,64 +76,75 @@
     </div>
   </section>
 
-  <!-- layout kurang rapi, prefer flex. html kurang semantic -->
-  <section class="bg-orange-100 ">
+
+  <section class="bg-orange-100 py-16  ">
     <!-- wrapper flex buat max-width -->
-    <div class="py-14 px-10 md:flex justify-center">
-      <img src="/img/BrandLogo.png " />
-    </div>
+      <div class=" md:flex justify-center">
+        <img src="/img/BrandLogo.png " />
+       </div>
 
-    <div class="py-4 px-10">
-      <h4 class="text-lg">
-        <b class="text-stone-700">Sekilas</b>
-      </h4>
-      <br />
-      <!-- font weight blum sesuai -->
-      <div class="flex justify-between">
-        <p class="text-stone-500">
-          Untuk anda yang ingin memulai bisnis maupun yang <br />ingin
-          mengembangkan bisnisnya (reseller dan supplier), <br />Marketplace B2B
-          yang menyediakan cara kerja yang <br />simpel dan mudah sehingga
-          meminimalisir usaha anda <br />dalam menjalankan bisnis serta
+    <div class="flex flex-col lg:flex-row w-full max-w-6xl mx-auto gap-x-8 gap-y-4 ">
+
+
+      <div class=" py-10 max-w-2xl">
+        <h4 class="text-xl  text-stone-700">
+        <b>Sekilas</b>
+        </h4>
+        <br>
+        <div class=" text-stone-500 font-medium text-base w-3/5">
+
+           Untuk anda yang ingin memulai bisnis maupun yang ingin
+          mengembangkan bisnisnya (reseller dan supplier), Marketplace B2B
+          yang menyediakan cara kerja yang simpel dan mudah sehingga
+          meminimalisir usaha anda dalam menjalankan bisnis serta
           memasarkan produk anda.
-        </p>
 
-        <div>
-          <p class="text-lg">
-            <b class="text-stone-700">Apa yang bukan kita?</b>
-          </p>
-          <br />
 
-          <div>
-            <p class="text-stone-500">
-              Kami bukan marketplace untuk berbelanja layaknya e-commerce
-              <br />pada umumnya. Sistem kita hanya menerima reseller dan
-              supplier.
-              <br />
-            </p>
-          </div>
-        </div>
+
       </div>
-      <div class="py-4 flex justify-end">
-        <router-link
+
+      </div>
+
+
+        <div class="py-10 w-1/2  ">
+          <h4 class="text-xl ">
+            <b class="text-stone-700">Apa yang bukan kita?</b>
+          </h4>
+          <br>
+          <div class="text-stone-500 text-base font-medium ">
+
+              Kami bukan marketplace untuk berbelanja layaknya e-commerce pada umumnya. Sistem kita hanya menerima reseller dan
+              supplier.
+          </div>
+            <div class="py-4  flex justify-between">
+           <router-link
           to="#!"
           class="flex px-4 py-2 bg-amber-500 hover:bg-orange-500 text-white justify-center"
         >
-          <span class="font-medium">Pelajari Kita Lebih Lengkap</span>
+          <span class="font-medium text-base">Pelajari Kita Lebih Lengkap</span>
           <ArrowRight class="w-6" />
         </router-link>
+        </div>
+
+        </div>
+
       </div>
-    </div>
+
+
+
+
+
+
   </section>
 
-  <section class="bg-amber-500">
-    <h1 class="mx-20 py-8 text-white">
-      <b class="text-lg">Bagaimana Cara Kita Bekerja</b>
-    </h1>
+  <section class="bg-amber-500 text-2xl ">
+    <h4 class="mx-20 py-8 text-white">
+      <b>Bagaimana Cara Kita Bekerja</b>
+    </h4>
 
-    <h1 class="mx-20 py-6 text-amber-300 text-lg">
+    <h4 class="mx-20 py-6 text-amber-300 text-2xl">
       <b>Flow Here...</b>
-    </h1>
+    </h4>
   </section>
 
   <section class="bg-orange-100 p-8 lg:py-32 lg:px-16">
@@ -147,10 +156,11 @@
       </div>
 
       <!-- blum ada spacing, rounded border -->
-      <Accordion class="w-full rounded">
+      <div class="rounded">
+        <Accordion>
 
 
-        <ul class="list-disc space-y-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        <ul class=" py-6 px-6 list-disc space-y-3 text-stone-500"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim
@@ -161,27 +171,29 @@
 
 
       </Accordion>
+      </div>
+
     </div>
   </section>
 
   <!--  -->
-  <footer class="bg-stone-900 px-24 py-12 flex flex-col">
-    <div class="flex flex-row space-x-32 justify-between">
+  <footer class="bg-stone-900 px-24 py-12 flex flex-col max-w-full mx-auto gap-x-8 gap-y-4 ">
+    <div class="flex flex-row space-x-32 justify-between ">
       <div>
-        <img src="Unisell-Brand_Typo.svg" alt="logo" class="w-1/3" />
+        <img src="Unisell-Brand_Typo.svg" alt="logo" class="w-1/2" />
         <p class="text-stone-300">
           &copy; 2022 Unisell Indonesia <br />
           All right reserved.
         </p>
       </div>
       <div class="flex flex-col space-y-2 text-white">
-        <h2 class="text-xs text-stone-300">Navigasi</h2>
+        <h5 class="text-xs text-stone-300">Navigasi</h5>
         <a href="#" class="block w-full hover:underline">Beranda</a><br />
         <a href="#" class="bock w-full hover:underline">Tentang</a><br />
         <a href="#" class="block w-full hover:underline">Katalog</a><br />
       </div>
       <div class="flex flex-col space-y-2 text-white">
-        <h2 class="text-xs text-stone-300">Media Sosial</h2>
+        <h5 class="text-xs text-stone-300">Media Sosial</h5>
 
         <div class="flex justify-start">
           <Instagram class="w-6" />
