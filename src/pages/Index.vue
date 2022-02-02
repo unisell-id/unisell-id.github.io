@@ -41,9 +41,7 @@
       </h4>
 
       <ul class="list-disc text-lg font-semibold text-orange-500 space-y-3">
-        <li>Mau bisnis tapi jualan apa ya? 🤔</li>
-        <li>Aku udah punya ide jualan, tapi nggak punya modal 🙁</li>
-        <li>Kalau jualan aku nggak punya tempat buat menaruh daganganku 😫</li>
+        <li >Kalau jualan aku nggak punya tempat buat menaruh daganganku 😫</li>
         <li>Eh cara jualan yang benar bagaimana ya? 😅</li>
         <li>
           Menjalani bisnis sendiri, seandainya aku punya tempat buat
@@ -57,6 +55,9 @@
   <section class="bg-amber-500 py-32 px-16">
     <div
       class="flex flex-col lg:flex-row w-full max-w-screen-lg mx-auto gap-x-20 gap-y-10">
+       <h4 class="font-semibold text-2xl text-stone-700">
+        Atau.. mungkin keresahan anda seperti ini?
+      </h4>
       <ul class="list-disc text-lg font-semibold text-white space-y-3">
         <li>Susah juga ya bikin produk sama jualan. &#128556</li>
         <li>
@@ -70,9 +71,7 @@
         </li>
       </ul>
 
-      <h4 class="font-semibold text-2xl text-stone-700">
-        Atau.. mungkin keresahan anda seperti ini?
-      </h4>
+
     </div>
   </section>
 
@@ -178,7 +177,7 @@
 
   <!--  -->
   <footer class="bg-stone-900 p-8 lg:py-12 lg:px-10 ">
-    <div class="flex flex-row space-x-32 justify-between max-w-full  ">
+    <div class="flex flex-row space-x-32 justify-between md:max-w-full  ">
       <div>
         <img src="Unisell-Brand_Typo.svg" alt="logo" class="w-1/2" />
         <p class="text-stone-300">
@@ -186,22 +185,22 @@
           All right reserved.
         </p>
       </div>
-      <div class="flex flex-col space-y-2 text-white">
+      <div class="flex flex-col space-y-2 text-white max-w-lg" >
         <h5 class="text-xs text-stone-300">Navigasi</h5>
-        <a href="#" class="block w-full hover:underline">Beranda</a><br />
-        <a href="#" class="bock w-full hover:underline">Tentang</a><br />
-        <a href="#" class="block w-full hover:underline">Katalog</a><br />
+        <router-link to="/" class="block w-full hover:underline">Beranda</router-link><br />
+        <router-link to="/tentang" class="bock w-full hover:underline">Tentang</router-link><br />
+        <router-link to="/" class="block w-full hover:underline">Katalog</router-link><br />
       </div>
       <div class="flex flex-col space-y-2 text-white">
         <h5 class="text-xs text-stone-300">Media Sosial</h5>
 
         <div class="flex justify-start">
           <Instagram class="w-6" />
-          <p class="px-2">unisell.id</p>
+          <a href="#!" class="px-2 block w-full hover:underline">unisell.id</a>
         </div>
       </div>
 
-      <div class="flex flex-col space-y-2 text-white">
+      <div class="flex flex-col space-y-2 text-white w-1/2">
         <span class="text-xs text-stone-300">Alamat</span>
         <address>
           Jalan Kolonel Sutarto Nomor 150K, Jebres, Surakarta, Jawa Tengah 57126
@@ -216,6 +215,7 @@ import Navbar from "../components/Navbar.vue";
 import Accordion from "../components/Accordion.vue";
 import ArrowRight from "../components/icons/ArrowRight.vue";
 import Instagram from "../components/icons/Instagram.vue";
+
 </script>
 
 <style lang="sass" scoped>
