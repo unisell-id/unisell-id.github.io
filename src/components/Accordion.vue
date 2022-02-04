@@ -4,7 +4,7 @@
     <div class="">
       <div class="bg-red-900 text-white p-4 font-bold flex justify-start">
         <ArrowDown />
-        <p class="px-2">Apa yang dapat Unisell Berikan kepada reseller ?</p>
+        <p class="px-2">Apa yang dapat Unisell berikan kepada reseller ?</p>
       </div>
       <div class="bg-white">
         <slot></slot>

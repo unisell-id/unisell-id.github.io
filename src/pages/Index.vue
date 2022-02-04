@@ -41,6 +41,8 @@
       </h4>
 
       <ul class="list-disc text-lg font-semibold text-orange-500 space-y-3">
+        <li>Mau bisnis tapi jualan apa ya? 	&#129300</li>
+        <li>Aku udah punya ide jualan, tapi nggak punya modal 	&#128577</li>
         <li >Kalau jualan aku nggak punya tempat buat menaruh daganganku 😫</li>
         <li>Eh cara jualan yang benar bagaimana ya? 😅</li>
         <li>
@@ -154,7 +156,7 @@
         </h4>
       </div>
 
-      <!-- blum ada spacing, rounded border -->
+
       <div class="rounded">
         <Accordion>
 

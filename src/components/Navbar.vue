@@ -58,7 +58,7 @@ import { ContactPerson } from "../utils/contactPerson";
 const CenterNavItems = [
   {
     label: "Beranda",
-    to: "#!",
+    to: "/",
   },
   {
     label: "Tentang",
@@ -70,7 +70,7 @@ const CenterNavItems = [
   },
   {
     label: "FAQ",
-    to: "#!",
+    to: "#FAQ",
   },
 ];
 </script>
